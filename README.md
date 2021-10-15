@@ -14,3 +14,4 @@ What should I add :
   - My hobbies and passions
   - change the part of my realisations for a modal window
   - add the loading screen at the start
+  - Add English version to the Portfolio
