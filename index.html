@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Portfolio </title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="./script.js"></script>
+
+</head>
+
+
+<body>
+
+    <!-- <div class="loadingscreen" id="loadingscreen">
+        <span style="--i:1";>L</span>
+        <span style="--i:2";>o</span>
+        <span style="--i:3";>a</span>
+        <span style="--i:4";>d</span>
+        <span style="--i:5";>i</span>
+        <span style="--i:6";>n</span>
+        <span style="--i:7";>g</span>
+        <span style="--i:8";>.</span>
+        <span style="--i:9";>.</span>
+        <span style="--i:10";>.</span>
+    </div> -->
+
+    <div class="content" id="content">
+        <header>
+            <a class="logo-link" href="https://dwarves.iut-fbleau.fr/~martinv/Portfolio">
+                <img class="logo" src="./img/VM.png" alt="logo">
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul class="nav-links">
+                    <li><a class="links" href="#accueil">Accueil</a></li>
+                    <li><a class="links" href="#CV">CV</a></li>
+                    <li><a class="links" href="#realisation">Réalisations</a></li>
+                    <li><a class="links" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu" id="burger" onclick="MenuBurger()">
+                <div class="menu-line" id="first-line"></div>
+                <div class="menu-line" id="second-line"></div>
+                <div class="menu-line" id="third-line"></div>
+            </div>
+
+        </header>
+
+        <div class="welcome">
+            <span class="welcome-text">Bienvenue</span>
+        </div>
+
+        <div class="accueil" id="accueil">
+            <p class="presentation"> Bonjour, je suis <span class="nom">Valentin MARTIN</span> , étudiant en <span
+                    class="etude">DUT informatique</span> à l'université de fontainebleau</p>
+            <p class="stage"> Je suis à la recherche d'un <span class="stage-span">stage en informatique</span> pour ma
+                deuxième année de DUT</p>
+        </div>
+
+        <div class="CV" id="CV">
+            <a href="./CV.pdf" class="cv-links">Consulter mon CV</a>
+        </div>
+
+        <div class="realisation" id="realisation">
+
+            <div class="realisation-container">
+
+                <a class="portfolio animation3" href="./realisations.html#portfolio">
+                    <h3 class="titre-realisation">Portfolio</h3>
+                    <p class="description-realisation">Réalisation de mon portfolio la semaine du 16 août 2021</p>
+                    <p class="temps-realisation"> Temps de travail : 1 semaine</p>
+                </a>
+
+                <a class="portfolio animation2" href="./realisations.html#chic&blo">
+                    <h3 class="titre-realisation">Chic & Blo</h3>
+                    <p class="description-realisation">Réalisation du site d'un fast-food n'en possédant pas durant les
+                        vacances d'éte</p>
+                    <p class="temps-realisation"> Temps de travail : étalé sur Juillet et Août 2021</p>
+                </a>
+
+            </div>
+
+            <div class="realisation-container">
+
+                <a class="portfolio animation2" href="./realisations.html#blocus">
+                    <h3 class="titre-realisation">Blocus</h3>
+                    <p class="description-realisation">1er projet du DUT informatique : jeu en langage C avec librairie
+                        de l'université réalisé en 1 semaine en binôme</p>
+                    <p class="temps-realisation"> Temps de travail : 1 semaine</p>
+                </a>
+
+                <a class="portfolio animation1" href="./realisations.html#SameGame">
+                    <h3 class="titre-realisation">SameGame</h3>
+                    <p class="description-realisation">2ème projet du DUT informatique : jeu en JAVA réalisé sur 2
+                        semaines en binôme</p>
+                    <p class="temps-realisation"> Temps de travail : 2 semaines</p>
+                </a>
+
+            </div>
+
+            <div class="realisation-container">
+
+                <a class="portfolio animation1" href="./realisations.html#shifumi">
+                    <h3 class="titre-realisation">Shifumi</h3>
+                    <p class="description-realisation"> Pierre-feuille-ciseau en HTML / CSS / JS, il s'agit d'un projet
+                        personnel</p>
+                    <p class="temps-realisation"> Temps de travail : 4 jours</p>
+                </a>
+
+                <a class="portfolio animation3" href="./realisations.html#themeswapper">
+                    <h3 class="titre-realisation">Theme Swapper</h3>
+                    <p class="description-realisation">Petit projet : bouton changeant le thème du site : light theme /
+                        dark theme</p>
+                    <p class="temps-realisation"> Temps de travail : 1 soirée</p>
+                </a>
+
+            </div>
+
+            <div class="realisation-container">
+
+                <a class="portfolio animation1" href="./realisations.html#karenda">
+                    <h3 class="titre-realisation">Karenda</h3>
+                    <p class="description-realisation"> Calendrier en ligne en HTML / CSS / JS, il s'agit d'un projet
+                        scolaire</p>
+                    <p class="temps-realisation"> Temps de travail : 3 semaines</p>
+                </a>
+
+            </div>
+
+
+        </div>
+
+        <div class="contact" id="contact">
+
+            <form method="post" action="contacter.php" class="container-contact">
+
+                <h1 class="me-contacter">Me contacter</h1>
+
+                <div class="contact-form">
+
+                    <div class="input-fields">
+                        <input type="text" class="input" name="prenom" placeholder="Prénom">
+                        <input type="text" class="input" name="nom" placeholder="Nom" required="">
+                        <input type="text" class="input" name="email" placeholder="E-mail" required="">
+                        <input type="text" class="input" name="sujet" placeholder="Sujet" required="">
+                    </div>
+
+                    <textarea class="message" name="message" placeholder="Message" required=""></textarea>
+
+                </div>
+
+                <div class="regroup-btn">
+                    <input class="btn-send" name="submit" value="Envoyer" type="submit">
+                    <input class="btn-send" type="reset" value="Effacer">
+                </div>
+
+            </form>
+        </div>
+
+        <div class="icon-bar">
+
+            <a href="https://www.linkedin.com/in/valentin-martin-417102203/" target="blank" class="icon-bgcolor">
+                <img class="img-icon" src="./img/linkedin.png">
+                <p class="icon-text">LinkedIn</p>
+            </a>
+
+            <a href="https://dwarves.iut-fbleau.fr/git/martinv" target="blank" class="icon-bgcolor">
+                <img class="img-icon" src="./img/git.png">
+                <p class="icon-text">GitHub</p>
+            </a>
+
+            <a href="mailto:valentin.mrt45@gmail.com" class="icon-bgcolor">
+                <img class="img-icon" src="./img/enveloppe.png">
+                <p class="icon-text">valentin.mrt45@gmail.com</p>
+            </a>
+
+            <a class="icon-bgcolor">
+                <img class="img-icon" src="./img/telephone.png">
+                <p class="icon-text">06 51 65 66 42</p>
+            </a>
+
+        </div>
+
+        <img src="./img/top-arrow.png" alt="top-arrow" class="top-arrow" onclick="ScrollTop()">
+    </div>
+
+</body>
+
+</html>

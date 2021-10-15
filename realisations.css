@@ -1,0 +1,192 @@
+.left-arrow {
+    width: 60px;
+    transition: all ease-in-out 0.2s;
+}
+
+.go-back {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #c5ecfd;
+    border-radius: 15px;
+    width: 300px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.go-back:hover {
+    text-decoration: underline 2px black;
+}
+
+.go-back:hover img{
+    transform: scale(1.05);
+    transition: all ease-in-out 0.2s;
+}
+
+.go-back-text {
+    font-size: 20px;
+    transition: all ease-in-out 0.2s;
+    margin: 15px;
+    color: black;
+}
+
+.projet {
+    text-align: center;
+    background-color: #c5ecfd;
+    width: 1000px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 150px;
+}
+
+.description-projet-texte {
+    padding: 15px;
+    margin-top: 5px;
+    letter-spacing: 0.7px;
+}
+
+.span-date-rea {
+    color: royalblue;
+}
+
+.span-temps-rea {
+    color: royalblue;
+}
+
+.date-realisation {
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.temps-realisation-projet {
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.external-links {
+    color: rgb(85, 85, 255);
+}
+
+.external-links:hover {
+    text-decoration: underline;
+}
+
+.old-portfolio:hover {
+    text-decoration: underline;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+ 
+.projet-titre {
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    color: rgb(46, 46, 46) ;
+}
+
+.description-projet {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 283px;
+    font-size: 25px;
+    margin: auto;
+    margin-top: 25px;
+    padding: 5px;
+    letter-spacing: 0.6px;
+}
+
+.slider {
+    width: 700px;
+    overflow: hidden;
+    margin: 5px auto;
+}
+
+.slides {
+    width: calc(700px * 3);
+    animation: glisse 10s infinite;
+}
+
+.slide {
+    float: left;
+}
+
+.slide img {
+    border-radius: 5px;
+}
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-700px);
+    }
+    43% {
+        transform: translateX(-700px);
+    }
+    66% {
+        transform: translateX(-1400px);
+    }
+    76% {
+        transform: translateX(-1400px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width:1270px) {
+
+    .left-arrow {
+        width: 100px;
+    }
+
+    .go-back {
+        width: 600px;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    .go-back-text {
+        font-size: 50px;
+    }
+
+    .description-projet {
+        font-size: 65px;
+        width: 800px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+
+    .projet-titre {
+        font-size: 50px;
+    }
+
+    .description-projet-texte {
+        font-size: 30px;
+    }
+
+    .temps-realisation-projet {
+        font-size: 32px;
+        margin-top: 50px;
+        padding: 0;
+        margin-bottom: 25px;
+    }
+
+    .date-realisation {
+        font-size: 32px;
+        margin-top: 50px;
+        padding: 0;
+    }
+}
